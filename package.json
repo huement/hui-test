@@ -1,15 +1,22 @@
 {
   "name": "hui-test",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
-    "scss": "sass --verbose --no-quiet --load-path=node_modules --style expanded --source-map --embed-sources scss:dist"
+    "scss": "sass --verbose --no-quiet --load-path=node_modules --style expanded --source-map --embed-sources scss:docs",
+    "build": "node index.js"
   },
-  "author": "",
+  "author": "Derek Scott <derek@huement.com>",
   "license": "ISC",
-  "description": "",
+  "description": "This repo is for testing out the @huement/ui package",
   "dependencies": {
-    "@huement/ui": "^0.5.0",
+    "@huement/ui": "file:../hui",
+    "bootstrap": "5.3.3",
     "sass": "^1.79.4"
+  },
+  "devDependencies": {
+    "posthtml": "^0.16.6",
+    "posthtml-expressions": "^1.11.4",
+    "posthtml-include": "^2.0.1"
   }
 }

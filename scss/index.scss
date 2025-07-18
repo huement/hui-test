@@ -12,8 +12,10 @@
 
 //
 // SUPER CLASSY SETUP
-@import '@huement/ui/scss/mojo';
+@import '@huement/ui/scss/ui';
 
 .hui-test {
-  color: #666;
+  color: map.get($mojo-coral, hex);
+  background-color: $yellow-100;
+  font-size: $base-font-size;
 }

@@ -1,0 +1,205 @@
+<section class="col-lg-10 mx-auto my-5">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <h2>Form Evaluation & Testing</h2>
+      <form>
+        <div class="mb-3">
+          <label for="regularInput" class="form-label">Regular Text Input</label>
+          <input type="text" class="form-control" id="regularInput" placeholder="Enter text">
+        </div>
+        <div class="mb-3">
+          <label for="smallInput" class="form-label">Small Text Input</label>
+          <input type="text" class="form-control form-control-sm" id="smallInput" placeholder="Small input">
+        </div>
+        <div class="mb-3">
+          <label for="largeInput" class="form-label">Large Text Input</label>
+          <input type="text" class="form-control form-control-lg" id="largeInput" placeholder="Large input">
+        </div>
+        <div class="mb-3">
+          <label for="inputGroupIcon" class="form-label">Input Group with Icon</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">
+              <i class='bx bx-user'></i>
+            </span>
+            <input type="text" class="form-control" id="inputGroupIcon" placeholder="Username" aria-describedby="inputGroupPrepend">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <!-- Main form example -->
+      <!-- (copy the main form from index.html here) -->
+      <div class="bs-component">
+        <form>
+          <fieldset>
+            <legend>Legend</legend>
+            <div class="row">
+              <label class="col-sm-2 col-form-label" for="staticEmail">Email</label>
+              <div class="col-sm-10">
+                <input class="form-control-plaintext" id="staticEmail" type="text" readonly value="email@example.com">
+              </div>
+            </div>
+            <div>
+              <label class="form-label mt-4" for="exampleInputEmail1">Email address</label>
+              <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone else.</small>
+            </div>
+            <div>
+              <label class="form-label mt-4" for="exampleInputPassword1">Password</label>
+              <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password" autocomplete="off">
+            </div>
+            <div>
+              <label class="form-label mt-4" for="exampleSelect1">Example select</label>
+              <select class="form-select" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label mt-4" for="exampleSelect1">Example disabled select</label>
+              <select class="form-select" id="exampleDisabledSelect1" disabled>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label mt-4" for="exampleSelect2">Example multiple select</label>
+              <select class="form-select" id="exampleSelect2" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label mt-4" for="exampleTextarea">Example textarea</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <div>
+              <label class="form-label mt-4" for="formFile">Default file input example</label>
+              <input class="form-control" id="formFile" type="file">
+            </div>
+            <fieldset>
+              <legend class="mt-4">Radio buttons</legend>
+              <div class="form-check">
+                <input class="form-check-input" id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked>
+                <label class="form-check-label" for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="optionsRadios2" type="radio" name="optionsRadios" value="option2">
+                <label class="form-check-label" for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" id="optionsRadios3" type="radio" name="optionsRadios" value="option3" disabled>
+                <label class="form-check-label" for="optionsRadios3">Option three is disabled</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="mt-4">Checkboxes</legend>
+              <div class="form-check">
+                <input class="form-check-input" id="flexCheckDefault" type="checkbox">
+                <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="flexCheckChecked" type="checkbox" checked>
+                <label class="form-check-label" for="flexCheckChecked">Checked checkbox</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="mt-4">Switches</legend>
+              <div class="form-check form-switch">
+                <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="mt-4">Ranges</legend>
+              <label class="form-label" for="customRange1">Example range</label>
+              <input class="form-range" id="customRange1" type="range">
+              <label class="form-label" for="disabledRange">Disabled range</label>
+              <input class="form-range" id="disabledRange" type="range" disabled>
+              <label class="form-label" for="customRange3">Example range</label>
+              <input class="form-range" id="customRange3" type="range" min="0" max="5" step="0.5">
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1">
+      <!-- Side form examples -->
+      <form class="bs-component">
+        <div>
+          <fieldset disabled>
+            <label class="form-label" for="disabledInput">Disabled input</label>
+            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+            <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly>
+          </fieldset>
+        </div>
+        <div class="has-success">
+          <label class="form-label mt-4" for="inputValid">Valid input</label>
+          <input class="form-control is-valid" id="inputValid" type="text" value="correct value">
+          <div class="valid-feedback">Success! You've done it.</div>
+        </div>
+        <div class="has-danger">
+          <label class="form-label mt-4" for="inputInvalid">Invalid input</label>
+          <input class="form-control is-invalid" id="inputInvalid" type="text" value="wrong value">
+          <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+        </div>
+        <div>
+          <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Large input</label>
+          <input class="form-control form-control-lg" id="inputLarge" type="text" placeholder=".form-control-lg">
+        </div>
+        <div>
+          <label class="col-form-label mt-4" for="inputDefault">Default input</label>
+          <input class="form-control" id="inputDefault" type="text" placeholder="Default input">
+        </div>
+        <div>
+          <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Small input</label>
+          <input class="form-control form-control-sm" id="inputSmall" type="text" placeholder=".form-control-sm">
+        </div>
+        <div>
+          <label class="form-label mt-4">Input addons</label>
+          <div>
+            <div class="input-group mb-3"><span class="input-group-text">$</span>
+              <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)"><span class="input-group-text">.00</span>
+            </div>
+            <div class="input-group mb-3">
+              <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-primary" id="button-addon2" type="button">Button</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label class="form-label mt-4">Floating labels</label>
+          <div class="form-floating mb-3">
+            <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input class="form-control" id="floatingPassword" type="password" placeholder="Password" autocomplete="off">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

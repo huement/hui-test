@@ -1,0 +1,9 @@
+<svg id="b56b72f8-2111-423c-bfb0-16b64e9527b5" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 196.429 196.429">
+  <defs>
+    <linearGradient id="a9449e7f-0a92-491d-a982-b9b7dc920aed" data-name="New Gradient Swatch" x1="-1801.104" y1="1211.38" x2="-1604.677" y2="1211.38" gradientTransform="translate(-1978.519 -135.146) rotate(-138.162)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.134" stop-color="#ff206e"/>
+      <stop offset="0.946" stop-color="#fbff12"/>
+    </linearGradient>
+  </defs>
+  <circle cx="98.214" cy="98.214" r="98.213" fill="url(#a9449e7f-0a92-491d-a982-b9b7dc920aed)"/>
+</svg>

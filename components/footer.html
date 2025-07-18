@@ -1,0 +1,52 @@
+<!-- Mojo Footer -->
+<footer class="footer bg-cyan-light pt-5" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <div class="circle-block"><img class="img-fluid footer-logo" src="./imgs/grid.svg" alt="Element1">
+          <div class="footer-circle bg-cyan-light">&nbsp;</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <div class="social-wrap">
+          <ul class="social-icons">
+            <li>
+              <a class="fill-facebook" href="{{ facebookURL }}">
+                <box-icon type="logo" name="facebook" class="bx bx-lg fill-facebook"></box-icon>
+              </a>
+            </li>
+            <li>
+              <a class="fill-github" href="{{ githubURL }}"">
+                <box-icon type="logo" name="github" class="bx bx-lg fill-white"></box-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4">
+        <p class="mb-2">(c) Huement.com 2025</p>
+        <p class="mt-1 fw-bold">@huement/ui <strong class="text-success">v {{ version }}</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="themeToggle" class="btn btn-primary btn-sm">
+  <box-icon name="rocket"></box-icon>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<script>
+  const toggleButton = document.getElementById("themeToggle");
+  const html = document.documentElement;
+
+  toggleButton.addEventListener("click", () => {
+    const currentTheme = html.getAttribute("data-bs-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    html.setAttribute("data-bs-theme", newTheme);
+  });
+</script>

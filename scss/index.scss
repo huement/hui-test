@@ -15,7 +15,7 @@
 @import '@huement/ui/scss/ui';
 
 .hui-test {
-  color: map.get($mojo-coral, hex);
+  color: map.get($hui-orange, hex);
   background-color: $yellow-100;
   font-size: $base-font-size;
 }

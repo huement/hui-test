@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*
+ *  ██████╗██╗      █████╗ ███████╗███████╗██╗ ██████╗
+ *  ██╔════╝██║     ██╔══██╗██╔════╝██╔════╝██║██╔════╝
+ *  ██║     ██║     ███████║███████╗███████╗██║██║     
+ *  ██║     ██║     ██╔══██║╚════██║╚════██║██║██║     
+ *  ╚██████╗███████╗██║  ██║███████║███████║██║╚██████╗
+ *   ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝ ╚═════╝
+ *  
+ *  Classic Theme for HUI Framework
+ *  ===============================
+ */
 /*!
  * Huement UI hui scss v5.3.3 (https://huement.github.io/ui/)
  * Copyright 2011-2025 Huement.com
@@ -100,11 +111,11 @@
   --bs-tertiary-bg: #050505;
   --bs-tertiary-bg-rgb: 5, 5, 5;
   --bs-heading-color: #E6E6E6;
-  --bs-link-color: #fff;
-  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-color: #6210c2;
+  --bs-link-color-rgb: 98, 16, 194;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #cccccc;
-  --bs-link-hover-color-rgb: 204, 204, 204;
+  --bs-link-hover-color: rgb(78.4, 12.8, 155.2);
+  --bs-link-hover-color-rgb: 78, 13, 155;
   --bs-code-color: #FF548D;
   --bs-highlight-color: #E6E6E6;
   --bs-highlight-bg: #FCFF4A;
@@ -9055,7 +9066,7 @@ progress {
   --bs-btn-disabled-color: #919191;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: 0 0 0 #000;
-  --bs-btn-focus-shadow-rgb: 216.75, 216.75, 216.75;
+  --bs-btn-focus-shadow-rgb: 121.55, 51.85, 203.15;
   text-decoration: underline;
 }
 .btn-link:focus-visible {
@@ -10445,20 +10456,20 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: #E6E6E6;
-  --bs-navbar-hover-color: #919191;
-  --bs-navbar-disabled-color: rgba(117, 117, 117, 0.3);
-  --bs-navbar-active-color: #6210c2;
+  --bs-navbar-color: #6210c2;
+  --bs-navbar-hover-color: #AC63FF;
+  --bs-navbar-disabled-color: #757575;
+  --bs-navbar-active-color: #33006E;
   --bs-navbar-brand-padding-y: 0.595703125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: #6210c2;
-  --bs-navbar-brand-hover-color: #6210c2;
+  --bs-navbar-brand-hover-color: #33006E;
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28230, 230, 230, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%236210c2' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgb(var(--bs-emphasis-color-rgb) 0.15);
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -13509,7 +13520,7 @@ textarea.form-control-lg {
   color: rgba(220, 220, 220, 0.85);
 }
 .btn.disabled.btn-light {
-  color: #777;
+  color: #ADADAD;
 }
 
 .btn-group > .btn:not(:first-child),
@@ -13659,18 +13670,25 @@ textarea.form-control-lg {
   padding-bottom: 0.2rem;
 }
 
-.navbar-nav a {
+.navbar.navbar-nav a {
   display: inline-flex;
   align-items: center;
   /* Vertically center SVG and text */
   white-space: nowrap;
   /* Prevent text wrapping */
 }
-.navbar-nav a svg {
+.navbar.navbar-nav a svg {
   display: inline-block;
   /* Ensure SVG behaves as inline element */
   vertical-align: middle;
   /* Align SVG with text */
+}
+.navbar.navbar-nav .navbar-dark a.nav-link.dropdown-toggle {
+  color: #E6E6E6;
+}
+
+.navbar .navbar-dark a.nav-link.dropdown-toggle {
+  color: #E6E6E6;
 }
 
 .alert {
@@ -14142,6 +14160,16 @@ textarea.form-control-lg {
 
 .tooltip {
   backdrop-filter: blur(5px);
+}
+
+.modal-title,
+.modal-body {
+  color: #3D3D3D;
+}
+
+[data-bs-theme=dark] .modal-title,
+[data-bs-theme=dark] .modal-body {
+  color: #050505;
 }
 
 .modal-content {
@@ -15454,7 +15482,6 @@ kbd kbd {
   background-color: #212121;
   border: none;
   border-radius: 0.5rem;
-  box-shadow: none;
 }
 
 .img-center {
@@ -15919,77 +15946,77 @@ kbd kbd {
 }
 
 .sqbtn-primary button {
-  color: iscolordark(#6210c2);
+  color: #ffffff;
 }
 .sqbtn-primary button::after {
   background-color: #6210c2;
 }
 
 .sqbtn-secondary button {
-  color: iscolordark(#1CA0AE);
+  color: #ffffff;
 }
 .sqbtn-secondary button::after {
   background-color: #1CA0AE;
 }
 
 .sqbtn-success button {
-  color: iscolordark(#3bfc43);
+  color: #000000;
 }
 .sqbtn-success button::after {
   background-color: #3bfc43;
 }
 
 .sqbtn-info button {
-  color: iscolordark(#1982c4);
+  color: #ffffff;
 }
 .sqbtn-info button::after {
   background-color: #1982c4;
 }
 
 .sqbtn-warning button {
-  color: iscolordark(#fbff12);
+  color: #000000;
 }
 .sqbtn-warning button::after {
   background-color: #fbff12;
 }
 
 .sqbtn-danger button {
-  color: iscolordark(#ff0054);
+  color: #ffffff;
 }
 .sqbtn-danger button::after {
   background-color: #ff0054;
 }
 
 .sqbtn-light button {
-  color: iscolordark(#E6E6E6);
+  color: #000000;
 }
 .sqbtn-light button::after {
   background-color: #E6E6E6;
 }
 
 .sqbtn-dark button {
-  color: iscolordark(#050505);
+  color: #ffffff;
 }
 .sqbtn-dark button::after {
   background-color: #050505;
 }
 
 .sqbtn-body button {
-  color: iscolordark(#050505);
+  color: #ffffff;
 }
 .sqbtn-body button::after {
   background-color: #050505;
 }
 
 .sqbtn-body-secondary button {
-  color: iscolordark(#C9C9C9);
+  color: #000000;
 }
 .sqbtn-body-secondary button::after {
   background-color: #C9C9C9;
 }
 
 .sqbtn-medium-dark button {
-  color: iscolordark(#3D3D3D);
+  color: #ffffff;
 }
 .sqbtn-medium-dark button::after {
   background-color: #3D3D3D;
@@ -16008,7 +16035,7 @@ kbd kbd {
   cursor: pointer;
   font-weight: bold;
   font-family: "Jura", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: iscolordark(#ff0054);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #ff0054 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #ff0054 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16043,7 +16070,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#1982c4);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #1982c4 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #1982c4 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16054,7 +16081,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#6210c2);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #6210c2 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #6210c2 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16065,7 +16092,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#AC63FF);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #AC63FF 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #AC63FF 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16076,7 +16103,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#FF548D);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #FF548D 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #FF548D 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16087,7 +16114,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#ff0054);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #ff0054 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #ff0054 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16098,7 +16125,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#fd7e47);
+  color: #000000;
   background: linear-gradient(to bottom left, #fd7e47 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #fd7e47 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16109,7 +16136,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#fbff12);
+  color: #000000;
   background: linear-gradient(to bottom left, #fbff12 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #fbff12 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16120,7 +16147,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#3bfc43);
+  color: #000000;
   background: linear-gradient(to bottom left, #3bfc43 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #3bfc43 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16131,7 +16158,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#1CA0AE);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #1CA0AE 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #1CA0AE 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16142,7 +16169,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#00f5d4);
+  color: #000000;
   background: linear-gradient(to bottom left, #00f5d4 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #00f5d4 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16153,7 +16180,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#000);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #000 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #000 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16164,7 +16191,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#fff);
+  color: #000000;
   background: linear-gradient(to bottom left, #fff 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #fff 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16175,7 +16202,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#919191);
+  color: #ffffff;
   background: linear-gradient(to bottom left, #919191 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #919191 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16186,7 +16213,7 @@ kbd kbd {
   --border: 2px;
   --slant: 0.5em;
   --color: $value;
-  color: iscolordark(#C9C9C9);
+  color: #000000;
   background: linear-gradient(to bottom left, #C9C9C9 50%, rgba(0, 0, 0, 0) 50.1%) top right, linear-gradient(to top right, #C9C9C9 50%, rgba(0, 0, 0, 0) 50.1%) bottom left;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -16197,7 +16224,7 @@ kbd kbd {
   display: inline-block;
   padding: 1rem 1.5rem 1rem 1.5rem;
   text-decoration: none;
-  color: iscolordark(#757575);
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
@@ -16237,7 +16264,7 @@ kbd kbd {
 }
 
 .pgbtn-primary {
-  color: iscolordark(#6210c2);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-primary::before {
@@ -16250,7 +16277,7 @@ kbd kbd {
 }
 
 .pgbtn-secondary {
-  color: iscolordark(#1CA0AE);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-secondary::before {
@@ -16263,7 +16290,7 @@ kbd kbd {
 }
 
 .pgbtn-success {
-  color: iscolordark(#3bfc43);
+  color: #000000;
   transition: background-image 0.3s linear;
 }
 .pgbtn-success::before {
@@ -16276,7 +16303,7 @@ kbd kbd {
 }
 
 .pgbtn-info {
-  color: iscolordark(#1982c4);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-info::before {
@@ -16289,7 +16316,7 @@ kbd kbd {
 }
 
 .pgbtn-warning {
-  color: iscolordark(#fbff12);
+  color: #000000;
   transition: background-image 0.3s linear;
 }
 .pgbtn-warning::before {
@@ -16302,7 +16329,7 @@ kbd kbd {
 }
 
 .pgbtn-danger {
-  color: iscolordark(#ff0054);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-danger::before {
@@ -16315,7 +16342,7 @@ kbd kbd {
 }
 
 .pgbtn-light {
-  color: iscolordark(#E6E6E6);
+  color: #000000;
   transition: background-image 0.3s linear;
 }
 .pgbtn-light::before {
@@ -16328,7 +16355,7 @@ kbd kbd {
 }
 
 .pgbtn-dark {
-  color: iscolordark(#050505);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-dark::before {
@@ -16341,7 +16368,7 @@ kbd kbd {
 }
 
 .pgbtn-body {
-  color: iscolordark(#050505);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-body::before {
@@ -16354,7 +16381,7 @@ kbd kbd {
 }
 
 .pgbtn-body-secondary {
-  color: iscolordark(#C9C9C9);
+  color: #000000;
   transition: background-image 0.3s linear;
 }
 .pgbtn-body-secondary::before {
@@ -16367,7 +16394,7 @@ kbd kbd {
 }
 
 .pgbtn-medium-dark {
-  color: iscolordark(#3D3D3D);
+  color: #ffffff;
   transition: background-image 0.3s linear;
 }
 .pgbtn-medium-dark::before {
@@ -16544,7 +16571,7 @@ kbd kbd {
   cursor: pointer;
   padding: 1.5rem 1rem;
   box-sizing: border-box;
-  color: iscolordark(#757575);
+  color: #ffffff;
   display: inline-flex;
   height: 2.5rem;
   letter-spacing: 0.1875rem;
